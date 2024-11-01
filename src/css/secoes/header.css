@@ -4,22 +4,29 @@
 }
 
 .header .logo {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: var(--fonte-extra-grande);
     color: var(--cor-branca);
-    border: 2px solid var(--cor-branca);
     border-radius: 50%;
     width: 65px;
     height: 65px;
     line-height: 60px;
     text-align: center;
     text-decoration: none;
-    transition: 0.3s;
+    box-shadow: 
+    0 0 5px #D4A5FF,
+    0 0 10px #D4A5FF,
+    0 0 20px #B45EFF,
+    0 0 30px #B45EFF;
+    transition: 0.3s ease-in-out;
 }
 
 .header a:hover .logo {
-    color: var(--cor-primaria);
-    border: 2px solid var(--cor-primaria);
+    box-shadow: 
+    0 0 20px #D4A5FF,
+    0 0 30px #D4A5FF,
+    0 0 40px #B45EFF,
+    0 0 50px #B45EFF;
 }
 
 .header nav ul {
@@ -32,15 +39,25 @@
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 20px;
-    transition: 0.2s;
+    margin-left: 20px;
     border-radius: 50px;
     letter-spacing: 1px;
     user-select: none;
+    box-shadow: 
+    0 0 5px #D4A5FF,
+    0 0 10px #D4A5FF,
+    0 0 20px #B45EFF,
+    0 0 30px #B45EFF;
+    transition: 0.3s ease-in-out;
 }
 
 .header nav ul li a:hover{
-    background-color: var(--cor-primaria);;
     color: var(--cor-branca);
+    box-shadow: 
+    0 0 20px #D4A5FF,
+    0 0 30px #D4A5FF,
+    0 0 40px #B45EFF,
+    0 0 50px #B45EFF;
 }
 
 .header .menu{
@@ -55,7 +72,7 @@
     flex-direction: column;
     cursor: pointer;
 }
-  
+
 .header .hamburguer {
     position: relative;
     display: block;
@@ -116,7 +133,6 @@
         display: block; 
     }
 
-    /* pega todos os itens que após o input e que sao irmaos dele */
     .header nav input:checked ~ ul {
         display: block;
     }
@@ -132,13 +148,18 @@
         display: none;        
         background: linear-gradient(135deg, #A7FF83, #F6D4E6, #D4A5FF);
         border-radius: 20px;
-        padding: 20px;       
+        padding: 10px;   
     }
     
     .header nav li a {
-        color: var(--cor-branca);
+        color: var(--cor-fundo-escuro);
         text-align: center;                
         padding: 20px;
         display: block;
+        box-shadow: none;
+    }
+
+    .header nav ul li a:hover {
+        color: var(--cor-fundo-escuro);
     }
 }

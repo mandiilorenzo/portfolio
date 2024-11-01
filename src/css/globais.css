@@ -36,7 +36,7 @@ html {
     font-size: 1.8rem;
     text-align: center;
     color: var(--cor-branca);
-    margin: 0 4px;
+    margin: 0 10px;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
@@ -46,16 +46,26 @@ html {
   }
   
   .redes-sociais a:hover {
-    color: var(--cor-primaria);
+    color: var(--cor-branca);
+    box-shadow: 
+    0 0 20px #D4A5FF,
+    0 0 30px #D4A5FF,
+    0 0 40px #B45EFF,
+    0 0 50px #B45EFF;
   }
   
   .outer-shadow {
-    box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
+    box-shadow: 
+    0 0 5px #D4A5FF,
+    0 0 10px #D4A5FF,
+    0 0 20px #B45EFF,
+    0 0 30px #B45EFF;
+    transition: 0.3s ease-in-out;
   }
   
-  .inner-shadow {
+  /* .inner-shadow {
     box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #454545;
-  }
+  } */
 
   .section{
     padding: 7rem 0 7rem;
