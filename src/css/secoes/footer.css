@@ -1,8 +1,7 @@
-/* FOOTER */
 .footer {
     margin-top: 7rem;
     text-align: center;
-    background-color: var(--cor-fundo-cinza-claro);
+    background: url(/src/imagens/b18d5124d08c77a110323493464ff7ae.gif);
 }
 
 .footer .container {
